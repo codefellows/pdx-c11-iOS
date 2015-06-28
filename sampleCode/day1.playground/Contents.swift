@@ -15,13 +15,13 @@ dryErase = "The man former named Prince" // OK to do
 let sharpie = "Al ordered chocolate."
 //sharpie = "Can I switch half-eaten chocolate for vanilla?" // NOT valid!
 
-struct productInfo {
+struct ProductInfo {
     var price: Float = 0
     var weight: Float = 0
     var volume: Float = 0
 }
 
-var product = productInfo()
+var product = ProductInfo()
 product.price  = 9.95
 product.weight = 7.1
 product.volume = 216
@@ -70,13 +70,13 @@ lateBloomer = 5
 // ---------------------------
 
 // Struct, simpler and not as powerful as a class
-struct payroll {
+struct Payroll {
     var name : String?
     var title : String?
     var biweeklyPay: Float?
 }
-var myRec: payroll?
-myRec = payroll()
+var myRec: Payroll?
+myRec = Payroll()
 myRec!.name = "John Smith"
 
 // Class with properties and method
@@ -116,7 +116,7 @@ println("Sellable? \(myJunker.sellable)")
 // ------------------------------
 // DEMO 1.6 Object Initialization
 // ------------------------------
-class castle {
+class Castle {
     var nHumans: Int // No. of people who live in castle
     var names = [String]()
 
@@ -134,14 +134,14 @@ class castle {
     }
 }
 
-var portland = castle(nHumans: 10) // Castle w/ 10 people
-var seattle  = castle(nHumans: 20) // Other castle, more crowded
+var portland = Castle(nHumans: 10) // Castle w/ 10 people
+var seattle  = Castle(nHumans: 20) // Other castle, more crowded
 portland.celebrate()
 
 // --------------------------
 // DEMO 1.7 Class Inheritance
 // --------------------------
-class moatedCastle: castle {
+class MoatedCastle: Castle {
     var nGators: Int = 1 // No. of alligators in moat
 
     init(nHumans_sub_init: Int, nGators_init: Int) {
@@ -155,6 +155,6 @@ class moatedCastle: castle {
         return super.celebrate() + "... and alligators are dancing!"
     }
 }
-var pioneerSq = moatedCastle(nHumans_sub_init: 10, nGators_init: 2)
+var pioneerSq = MoatedCastle(nHumans_sub_init: 10, nGators_init: 2)
 pioneerSq.moreGators(3)
 pioneerSq.celebrate()
