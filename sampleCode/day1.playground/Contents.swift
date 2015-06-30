@@ -57,16 +57,15 @@ println("mcHammer = \(mcHammer)")
 println("dBowie   = \(dBowie)")
 
 // Deferred initialization of constant
-let lateBloomer: Int
+let lateBloomer: String
 println("dryErase = \(dryErase)")
-lateBloomer = 5
+lateBloomer = "I was held up."
 
 // ---------------------------
-// Use following code for two demos:
-//
-// DEMO 1.3: Classes & Objects
-// DEMO 1.4: Accessing Properties
-// DEMO 1.5: Class & Methods
+// Code for multiple demos:
+//   DEMO 1.3: Classes & Objects
+//   DEMO 1.4: Accessing Properties
+//   DEMO 1.5: Methods
 // ---------------------------
 
 // Struct, simpler and not as powerful as a class
@@ -94,7 +93,7 @@ class Car {
     func makeSellable() {
         sellable = true;
     }
-    func goo() -> Int { return 1 }
+    func gimmeFive() -> Int { return 5 } // On your new car, of course!
 }
 
 var myJunker = Car(); // Instantiate an object
@@ -112,6 +111,7 @@ println("Sellable? \(myJunker.sellable)")
 myJunker.makeSellable()
 println("Sellable? \(myJunker.sellable)")
 */
+var highHandSmack = myJunker.gimmeFive()
 
 // ------------------------------
 // DEMO 1.6 Object Initialization
@@ -145,8 +145,8 @@ class MoatedCastle: Castle {
     var nGators: Int = 1 // No. of alligators in moat
 
     init(nHumans_sub_init: Int, nGators_init: Int) {
-        self.nGators = nGators_init
         super.init(nHumans: nHumans_sub_init)
+        self.nGators = nGators_init
     }
 
     func moreGators(nGators_in: Int) { nGators += nGators_in }
