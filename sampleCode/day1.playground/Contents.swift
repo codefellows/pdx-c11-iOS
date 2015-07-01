@@ -58,6 +58,7 @@ println("dBowie   = \(dBowie)")
 
 // Deferred initialization of constant
 let lateBloomer: String
+//println("lateBloomer = \(lateBloomer)")
 println("dryErase = \(dryErase)")
 lateBloomer = "I was held up."
 
@@ -106,11 +107,13 @@ myJunker.tankNow = 10
 myJunker.roadTrip(125.0)
 println("Gasoline left: \(myJunker.tankNow) gallons")
 
-/* For ref. (Type out to show auto-complete)
+
+// For ref. (Type out to show auto-complete)
 println("Sellable? \(myJunker.sellable)")
+//myJunker.
 myJunker.makeSellable()
 println("Sellable? \(myJunker.sellable)")
-*/
+//
 var highHandSmack = myJunker.gimmeFive()
 
 // ------------------------------
@@ -156,5 +159,12 @@ class MoatedCastle: Castle {
     }
 }
 var pioneerSq = MoatedCastle(nHumans_sub_init: 10, nGators_init: 2)
+
 pioneerSq.moreGators(3)
 pioneerSq.celebrate()
+
+// Scratch space for questions/experiments, etc.
+class foo {
+    var x: Int?
+}
+var F:foo
