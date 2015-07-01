@@ -1,9 +1,9 @@
 // Day 2 iOS F2 Portland
 import UIKit
 
-// ---------------------------------
-// DEMO 2.1: Strong References & ARC
-// ---------------------------------
+// --------------------------------------
+// DEMO 2.1: ARC & Strong/Weak References
+// --------------------------------------
 var objectExists: Bool = false
 
 func objectStatus() -> String {
@@ -46,3 +46,10 @@ cofounder = brook // 2nd ref created
   objectStatus()
 brook = nil       // 1st ref removed...
   objectStatus()  // ...but cofounder ref keeps object alive
+
+// Weak
+weak var foo: Person?
+foo = cofounder
+cofounder = nil
+  objectStatus() // foo wasn't strong enough to save the object
+foo // foo reverts to nil
