@@ -1,9 +1,9 @@
 // Day 2 iOS F2 Portland
 import UIKit
 
-// --------------------------------------
-// DEMO 2.1: ARC & Strong/Weak References
-// --------------------------------------
+// ----------------------------------------
+// DEMO 2.1: ARC & Strong & Weak References
+// ----------------------------------------
 var objectExists: Bool = false
 
 func objectStatus() -> String {
