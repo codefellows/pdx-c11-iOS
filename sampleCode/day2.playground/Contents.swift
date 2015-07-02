@@ -2,7 +2,7 @@
 import UIKit
 
 // ----------------------------------------
-// DEMO 2.1: ARC & Strong & Weak References
+// DEMO 2.2: ARC & Strong & Weak References
 // ----------------------------------------
 var objectExists: Bool = false
 
@@ -53,3 +53,21 @@ foo = cofounder
 cofounder = nil
   objectStatus() // foo wasn't strong enough to save the object
 foo // foo reverts to nil
+
+// ----------------
+// DEMO 2.2: Arrays
+// ----------------
+var dogNames = ["Fido", "Juniper", "Lucky"]
+var catNames: [String] = ["Fido", "Juniper", "Lucky"]
+dogNames[0]
+dogNames[2]
+dogNames.append("Old Yeller")
+dogNames.count
+dogNames.reverse()
+
+var prices: [Float32] = [100, -9, 0, 9.99]
+var temp: [Int] = [100, -9, 0, 1]
+
+var people = [Person]()
+people.append(Person("Will", "Little"))
+people.append(Person("Jordana", "Gustafson"))
