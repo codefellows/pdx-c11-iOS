@@ -17,24 +17,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, I'm a label." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2V-3G-I5v">
-                                <rect key="frame" x="245" y="28" width="109.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sqH-wa-pRE">
-                                <rect key="frame" x="316" y="120" width="267.5" height="203"/>
+                                <rect key="frame" x="316.5" y="120" width="267.5" height="203"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kbh-Bv-rku">
-                                <rect key="frame" x="16" y="120" width="267.5" height="203"/>
+                                <rect key="frame" x="16" y="120" width="268.5" height="203"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rrO-iN-qgq">
                                 <rect key="frame" x="16" y="377" width="568" height="203"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, I'm a label." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2V-3G-I5v">
+                                <rect key="frame" x="245" y="28" width="109.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ntk-Dq-pp0">
+                                <rect key="frame" x="161" y="56" width="278.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="278.5" id="t3j-oK-nWF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <connections>
+                                    <action selector="UserTextInput:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="Wnf-v6-At2"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="nWd-Qp-xfL"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -44,13 +56,15 @@
                             <constraint firstItem="kbh-Bv-rku" firstAttribute="height" secondItem="sqH-wa-pRE" secondAttribute="height" id="9eZ-9F-Paz"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="bottom" secondItem="rrO-iN-qgq" secondAttribute="bottom" constant="20" id="CcD-ow-5tH"/>
                             <constraint firstItem="kbh-Bv-rku" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="EBv-6u-dnT"/>
-                            <constraint firstItem="sqH-wa-pRE" firstAttribute="leading" secondItem="kbh-Bv-rku" secondAttribute="trailing" constant="33" id="FXQ-lw-Yjf"/>
+                            <constraint firstItem="sqH-wa-pRE" firstAttribute="leading" secondItem="kbh-Bv-rku" secondAttribute="trailing" constant="32" id="FXQ-lw-Yjf"/>
+                            <constraint firstAttribute="centerX" secondItem="ntk-Dq-pp0" secondAttribute="centerX" id="O6N-sk-KVX"/>
                             <constraint firstItem="sqH-wa-pRE" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="OSL-or-Py6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rrO-iN-qgq" secondAttribute="trailing" id="R42-ae-HZi"/>
                             <constraint firstItem="x2V-3G-I5v" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="VIP-h2-7i9"/>
                             <constraint firstItem="rrO-iN-qgq" firstAttribute="top" secondItem="kbh-Bv-rku" secondAttribute="bottom" constant="54" id="aQm-V4-nEI"/>
                             <constraint firstItem="sqH-wa-pRE" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="c8H-T0-DNB"/>
                             <constraint firstAttribute="leadingMargin" secondItem="kbh-Bv-rku" secondAttribute="leading" id="cad-bE-vLt"/>
+                            <constraint firstItem="ntk-Dq-pp0" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="36" id="f6p-Fh-2xk"/>
                             <constraint firstAttribute="centerX" secondItem="rrO-iN-qgq" secondAttribute="centerX" id="nKv-m0-hDk"/>
                         </constraints>
                     </view>
