@@ -1,0 +1,31 @@
+    @IBOutlet weak var myImgView: UIImageView!
+    @IBOutlet weak var pickStatusText: UILabel!
+
+    // Connect this IBAction to the "Change Image" button
+    @IBAction func OpenPhotoLibrary(sender: UIButton) {
+        var myPicker = UIImagePickerController()
+        myPicker.delegate = self
+
+        // Optional, shows if device has camera (iOS simulator does NOT)
+        var camExists: Bool = UIImagePickerController.isSourceTypeAvailable(.Camera)
+        println("camExists = \(camExists)")
+
+        myPicker.sourceType = .PhotoLibrary // Or .Camera
+        self.presentViewController(myPicker, animated: true, completion: nil)
+    }
+
+    // User picked a photo
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        self.myImgView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        self.pickStatusText.text = "Excellent choice!"
+        self.dismissViewControllerAnimated(false, completion: nil)
+        // Uncomment one of these to "un-distort" the image by default:
+        //self.myImgView.contentMode = UIViewContentMode.ScaleAspectFit
+        //self.myImgView.contentMode = UIViewContentMode.ScaleAspectFill
+    }
+
+    // User did NOT pick a photo (i.e., user hit CANCEL in the Photo Library view)
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        self.pickStatusText.text = "Blah! Make up your mind!"
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
