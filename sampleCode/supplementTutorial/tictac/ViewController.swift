@@ -35,7 +35,6 @@ class ViewController: UIViewController {
         mySubmitButton.enabled = false
         if (firstTurn) {
             firstTurn = false
-
         }
 
         let num = latestButton.tag
@@ -65,10 +64,10 @@ class ViewController: UIViewController {
 
         board[row][col] = subVal
         println("board = \(board)")
-        checkGameEnd(board)
+        checkGameEnd()
     }
 
-    func checkGameEnd(board: [[Int]]) {
+    func checkGameEnd() {
         // Check: Did one side win?
         // Check: Is game a draw?
 
