@@ -17,6 +17,7 @@
 		341515451B60E1B200823EC1 /* happyToes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 341515441B60E1B200823EC1 /* happyToes.jpg */; };
 		341515471B60E25D00823EC1 /* ticTac_dark.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 341515461B60E25D00823EC1 /* ticTac_dark.jpeg */; };
 		341515491B60E3D000823EC1 /* darkRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 341515481B60E3D000823EC1 /* darkRed.png */; };
+		3415154B1B61CB5300823EC1 /* white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3415154A1B61CB5300823EC1 /* white.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		341515441B60E1B200823EC1 /* happyToes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = happyToes.jpg; sourceTree = "<group>"; };
 		341515461B60E25D00823EC1 /* ticTac_dark.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ticTac_dark.jpeg; sourceTree = "<group>"; };
 		341515481B60E3D000823EC1 /* darkRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkRed.png; sourceTree = "<group>"; };
+		3415154A1B61CB5300823EC1 /* white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				341515291B5F2D1400823EC1 /* Images.xcassets */,
 				3415152B1B5F2D1400823EC1 /* LaunchScreen.xib */,
 				341515481B60E3D000823EC1 /* darkRed.png */,
+				3415154A1B61CB5300823EC1 /* white.jpg */,
 				341515421B60E1AB00823EC1 /* ticTac.jpg */,
 				341515461B60E25D00823EC1 /* ticTac_dark.jpeg */,
 				341515441B60E1B200823EC1 /* happyToes.jpg */,
@@ -205,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				341515451B60E1B200823EC1 /* happyToes.jpg in Resources */,
+				3415154B1B61CB5300823EC1 /* white.jpg in Resources */,
 				341515281B5F2D1400823EC1 /* Main.storyboard in Resources */,
 				341515431B60E1AB00823EC1 /* ticTac.jpg in Resources */,
 				3415152D1B5F2D1400823EC1 /* LaunchScreen.xib in Resources */,

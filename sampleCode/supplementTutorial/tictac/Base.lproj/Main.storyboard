@@ -17,22 +17,23 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="happyToes.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tbN-BL-JSb">
-                                <rect key="frame" x="0.0" y="181" width="216" height="138"/>
+                                <rect key="frame" x="0.0" y="231" width="216" height="138"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="216" id="DnW-eM-0w0"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="ticTac_dark.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="fau-BR-CQW">
-                                <rect key="frame" x="0.0" y="0.0" width="216" height="181"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ticTac_dark.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="fau-BR-CQW">
+                                <rect key="frame" x="0.0" y="0.0" width="216" height="232"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="216" id="Ln5-lJ-sgA"/>
+                                    <constraint firstAttribute="height" constant="232" id="f8G-dB-AMi"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDA-J6-hby" userLabel="ee">
-                                <rect key="frame" x="47" y="20" width="30" height="30"/>
+                                <rect key="frame" x="15" y="20" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="akK-Mx-936"/>
-                                    <constraint firstAttribute="width" constant="30" id="qHX-dq-jCJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="akK-Mx-936"/>
+                                    <constraint firstAttribute="width" constant="50" id="qHX-dq-jCJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="-" backgroundImage="darkRed.png">
@@ -43,10 +44,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubs-q1-fof">
-                                <rect key="frame" x="85" y="20" width="30" height="30"/>
+                                <rect key="frame" x="83" y="20" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="8XK-Pv-cYv"/>
-                                    <constraint firstAttribute="width" constant="30" id="STW-t1-uGi"/>
+                                    <constraint firstAttribute="height" constant="50" id="8XK-Pv-cYv"/>
+                                    <constraint firstAttribute="width" constant="50" id="STW-t1-uGi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="-" backgroundImage="darkRed.png">
@@ -57,10 +58,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0u-z6-tVa">
-                                <rect key="frame" x="123" y="20" width="30" height="30"/>
+                                <rect key="frame" x="149" y="20" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="3c4-TD-30l"/>
-                                    <constraint firstAttribute="height" constant="30" id="qIG-cL-UtO"/>
+                                    <constraint firstAttribute="width" constant="50" id="3c4-TD-30l"/>
+                                    <constraint firstAttribute="height" constant="50" id="qIG-cL-UtO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="-" backgroundImage="darkRed.png">
@@ -71,10 +72,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHi-xu-exH">
-                                <rect key="frame" x="47" y="58" width="30" height="30"/>
+                                <rect key="frame" x="16" y="78" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="0ra-7p-oTK"/>
-                                    <constraint firstAttribute="height" constant="30" id="zWp-DU-Vtd"/>
+                                    <constraint firstAttribute="width" constant="50" id="0ra-7p-oTK"/>
+                                    <constraint firstAttribute="height" constant="50" id="zWp-DU-Vtd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="-" backgroundImage="darkRed.png">
@@ -85,10 +86,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFK-fW-xBP" userLabel="centerBtn">
-                                <rect key="frame" x="85" y="58" width="30" height="30"/>
+                                <rect key="frame" x="83" y="78" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Ovy-80-gb7"/>
-                                    <constraint firstAttribute="width" constant="30" id="TWT-o5-IGD"/>
+                                    <constraint firstAttribute="height" constant="50" id="Ovy-80-gb7"/>
+                                    <constraint firstAttribute="width" constant="50" id="TWT-o5-IGD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="-" backgroundImage="darkRed.png">
@@ -99,10 +100,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46n-Nz-A75">
-                                <rect key="frame" x="123" y="58" width="30" height="30"/>
+                                <rect key="frame" x="149" y="78" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="ilD-56-9Mv"/>
-                                    <constraint firstAttribute="height" constant="30" id="sc8-VV-Xne"/>
+                                    <constraint firstAttribute="width" constant="50" id="ilD-56-9Mv"/>
+                                    <constraint firstAttribute="height" constant="50" id="sc8-VV-Xne"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="-" backgroundImage="darkRed.png">
@@ -113,10 +114,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKJ-wB-ynO">
-                                <rect key="frame" x="47" y="96" width="30" height="30"/>
+                                <rect key="frame" x="15" y="141" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="6m1-br-GHE"/>
-                                    <constraint firstAttribute="width" constant="30" id="q2a-58-6cZ"/>
+                                    <constraint firstAttribute="height" constant="50" id="6m1-br-GHE"/>
+                                    <constraint firstAttribute="width" constant="50" id="q2a-58-6cZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="-" backgroundImage="darkRed.png">
@@ -127,10 +128,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWy-Oz-QZu">
-                                <rect key="frame" x="85" y="96" width="30" height="30"/>
+                                <rect key="frame" x="83" y="141" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="21c-sh-zn0"/>
-                                    <constraint firstAttribute="width" constant="30" id="8Zv-4j-vtd"/>
+                                    <constraint firstAttribute="height" constant="50" id="21c-sh-zn0"/>
+                                    <constraint firstAttribute="width" constant="50" id="8Zv-4j-vtd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="-" backgroundImage="darkRed.png">
@@ -141,10 +142,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmd-JU-OOq">
-                                <rect key="frame" x="123" y="96" width="30" height="30"/>
+                                <rect key="frame" x="149" y="141" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="krm-kk-31t"/>
-                                    <constraint firstAttribute="height" constant="30" id="m0y-kP-jbL"/>
+                                    <constraint firstAttribute="width" constant="50" id="krm-kk-31t"/>
+                                    <constraint firstAttribute="height" constant="50" id="m0y-kP-jbL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="-" backgroundImage="darkRed.png">
@@ -155,9 +156,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmI-AL-zsd">
-                                <rect key="frame" x="63" y="151" width="75" height="30"/>
+                                <rect key="frame" x="71" y="202" width="75" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
-                                <state key="normal" title="Submit">
+                                <state key="normal" title="Submit" backgroundImage="white.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -165,24 +166,20 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Red's Turn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDb-if-4cM">
-                                <rect key="frame" x="15" y="215" width="170" height="21"/>
+                                <rect key="frame" x="15" y="265" width="170" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: Red 0, Green 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcF-JD-CCc">
-                                <rect key="frame" x="1" y="254" width="198" height="30"/>
+                                <rect key="frame" x="9" y="309" width="198" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="JDA-J6-hby" firstAttribute="top" secondItem="n0u-z6-tVa" secondAttribute="top" id="GWE-qy-vgE"/>
-                            <constraint firstItem="JDA-J6-hby" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="eEv-ng-f8v"/>
-                            <constraint firstItem="JDA-J6-hby" firstAttribute="top" secondItem="ubs-q1-fof" secondAttribute="top" id="p5B-4O-DaM"/>
-                        </constraints>
+                        <gestureRecognizers/>
                     </view>
                     <connections>
                         <outlet property="myLabel" destination="GcF-JD-CCc" id="Yd8-x7-3rA"/>
@@ -192,11 +189,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="115" y="334"/>
         </scene>
     </scenes>
     <resources>
         <image name="darkRed.png" width="800" height="800"/>
         <image name="happyToes.jpg" width="195" height="200"/>
         <image name="ticTac_dark.jpeg" width="400" height="400"/>
+        <image name="white.jpg" width="280" height="420"/>
     </resources>
 </document>

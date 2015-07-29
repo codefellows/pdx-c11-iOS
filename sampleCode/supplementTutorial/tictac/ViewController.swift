@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     let oh : String = "O"
     let ex : String = "X"
     let zee : String = "-"
-
     var marker: String = "-"
 
     let ohColor:  UIColor = UIColor.greenColor()
