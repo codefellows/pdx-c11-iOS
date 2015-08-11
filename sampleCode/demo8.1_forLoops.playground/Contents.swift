@@ -1,14 +1,19 @@
 import UIKit
 
-// We can use a "for-in" loop to iterate over a collection of items,
-// such as items in an array:
 let nameList = ["Arlene", "Brian", "Cindy", "Deathstar"]
 
+// "Normal" for loop. Explictly accesses each item in nameList[]
+for var index=0; index < nameList.count; index++ {
+    println("nameList[\(index)] = \(nameList[index])")
+}
+
+// We can use a "for-in" loop to iterate over a collection of items
+// such as array. Using the same array used above:
 for name in nameList {
     println("Hi, \(name)!")
 }
 
-// We can even access each character in a String:
+// We can access each character in a String:
 let sentence: String = "Hi, Edmund."
 
 for char in sentence {
