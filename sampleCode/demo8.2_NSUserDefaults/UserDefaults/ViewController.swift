@@ -22,8 +22,8 @@ class ViewController: UIViewController {
     func loadUsrData() {
         if let tmp_usrData = NSUserDefaults.standardUserDefaults().objectForKey("usrData") as? [String : String] {
             usrData = tmp_usrData
-            println(usrData["Name"])
             usrName.text = usrData["Name"]
+        //  println(usrData["Name"])
         }
     }
 
