@@ -5,7 +5,7 @@
 //  Copyright (c) 2015 Al. All rights reserved.
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     var usrData = ["Name" : "Dave"]
     @IBOutlet weak var usrName: UITextField!
 
@@ -31,6 +31,22 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         loadUsrData()
+    }
+
+    // Code to dimiss keyboard (covers two ways)
+    @IBAction func usrNameInputEnd(sender: UITextField) {
+         resignFirstResponder()
+    }
+    // 1. Dismiss when [Return] in on-screen kbd is clicked
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    // 2. Dismiss when user touches the View outside of the UITextField (and not on another control/widget)
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent?) {
+        super.touchesBegan(touches, withEvent: event!)
+        usrName.resignFirstResponder()
+      //myTextField.endEditing(true)  // Also dismisses kbd
     }
 
     override func didReceiveMemoryWarning() {
